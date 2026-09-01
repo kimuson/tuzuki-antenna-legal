@@ -3,32 +3,156 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>つづきアンテナ</title>
+<title>つづきアンテナ — 横浜市都筑区の地域情報アプリ</title>
+<meta name="description" content="つづきアンテナは、横浜市都筑区のニュース・行政のお知らせ・イベント・お店の情報をひとつにまとめて届ける地域情報アプリです。運営: 株式会社NEXASPARK">
 <style>
-:root { --teal:#0d9488; --ink:#1c1c1e; --muted:#6b7280; }
+:root { --teal:#0d9488; --ink:#1c1c1e; --muted:#6b7280; --line:#e5e7eb; --soft:#f8fafc; }
+* { box-sizing:border-box; }
 body { margin:0; background:#fff; color:var(--ink);
   font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
   line-height:1.8; }
 .hero { background:var(--teal); color:#fff; padding:48px 20px; text-align:center; }
+.hero img.icon { width:88px; height:88px; border-radius:20px; display:block; margin:0 auto 16px; }
 .hero h1 { margin:0 0 6px; font-size:26px; }
 .hero p { margin:0; opacity:.9; }
-main { max-width:640px; margin:0 auto; padding:32px 20px 64px; }
-.card { display:block; padding:18px 20px; margin:12px 0; border:1px solid #e5e7eb;
+main { max-width:640px; margin:0 auto; padding:32px 20px 56px; }
+section { margin:0 0 44px; }
+h2 { font-size:19px; margin:0 0 14px; padding-bottom:8px; border-bottom:2px solid var(--teal); }
+h3 { font-size:15px; margin:22px 0 4px; color:var(--teal); }
+p { margin:0 0 12px; }
+ul { padding-left:1.25em; margin:0 0 12px; }
+li { margin-bottom:6px; }
+a { color:var(--teal); }
+.card { display:block; padding:18px 20px; margin:12px 0; border:1px solid var(--line);
   border-radius:12px; text-decoration:none; color:var(--ink); }
 .card:hover { border-color:var(--teal); }
 .card b { color:var(--teal); }
-.meta { color:var(--muted); font-size:13px; margin-top:32px; text-align:center; }
+.shots { display:flex; gap:12px; overflow-x:auto; padding-bottom:8px; margin-bottom:12px; }
+.shots img { width:180px; flex:0 0 auto; border:1px solid var(--line); border-radius:12px; }
+.contact { background:var(--soft); border:1px solid var(--line); border-radius:12px; padding:20px; }
+.contact dt { font-size:13px; color:var(--muted); margin-top:14px; }
+.contact dt:first-of-type { margin-top:0; }
+.contact dd { margin:2px 0 0; font-size:16px; }
+.sources li span { display:block; color:var(--muted); font-size:13px; }
+.updates { list-style:none; padding:0; margin:0; }
+.updates li { display:flex; gap:14px; border-bottom:1px solid var(--line); padding:10px 0; margin:0; }
+.updates time { flex:0 0 88px; color:var(--muted); font-size:13px; }
+.note { color:var(--muted); font-size:13px; }
+footer { border-top:1px solid var(--line); color:var(--muted); font-size:13px;
+  text-align:center; padding:24px 20px 40px; }
 </style>
 </head>
 <body>
+
 <div class="hero">
-<h1>つづきアンテナ</h1>
-<p>横浜市都筑区の地域情報アプリ</p>
+  <!-- assets/ に画像をコピーしない場合は次の1行を削除してください -->
+  <img class="icon" src="./assets/icon-512.png" alt="つづきアンテナ アプリアイコン">
+  <h1>つづきアンテナ</h1>
+  <p>横浜市都筑区の地域情報アプリ</p>
+  <p style="margin-top:16px;display:inline-block;background:rgba(255,255,255,.18);
+            border:1px solid rgba(255,255,255,.5);border-radius:999px;
+            padding:6px 18px;font-size:14px">Android 版 公開準備中</p>
+  <!-- 公開後にストアURLを入れて有効化
+  <p style="margin-top:18px">
+    <a href="https://play.google.com/store/apps/details?id=org.nexaspark.tuzukiantenna"
+       style="display:inline-block;background:#fff;color:#0d9488;text-decoration:none;
+              font-weight:bold;padding:10px 22px;border-radius:999px">Google Play で入手</a>
+  </p>
+  -->
 </div>
+
 <main>
-<a class="card" href="./privacy.html"><b>プライバシーポリシー →</b><br>本アプリにおける利用者情報の取扱い</a>
-<a class="card" href="./terms.html"><b>利用規約 →</b><br>本アプリの利用条件</a>
-<p class="meta">株式会社NEXASPARK<br>お問い合わせ: <a href="mailto:yuta.kimura@nexaspark.org">yuta.kimura@nexaspark.org</a></p>
+
+<section>
+  <h2>つづきアンテナについて</h2>
+  <p>つづきアンテナは、横浜市都筑区の地域情報を1か所に集めて届けるアプリです。行政のお知らせ、地域ニュース、イベント情報を、都筑区に関するものだけ集めて時系列で表示します。運営は株式会社NEXASPARK です。</p>
+
+  <h3>都筑区の「いま」がひと目でわかる統合フィード</h3>
+  <p>複数の情報源から都筑区に関する記事を集めて、新着順に表示します。AIが「子育て」「防災」「くらし」などの生活カテゴリに自動で振り分けるので、知りたい話題だけを追えます。</p>
+
+  <h3>地域マップ</h3>
+  <p>区内のイベントやお店を地図から探せます。マップ表示と一覧表示を切り替えられます。</p>
+
+  <h3>AIアシスタント</h3>
+  <p>「今週末のイベントは？」のような質問に、アプリが持つ地域データを根拠にして答えます。回答には出典が付き、そのまま詳細ページへ移動できます。</p>
+
+  <h3>暮らしの専門家・クーポン・求人・地域コミュニティ</h3>
+  <p>地域の専門家に相談したいとき、近所のお得な情報を探したいときに使えます。</p>
+
+  <h3>ログインは不要</h3>
+  <p>閲覧・通知・ブックマークはアカウントなしで使えます。ログインが必要なのはクーポンの利用など一部の機能だけです。</p>
+</section>
+
+<!-- 画像を assets/ にコピーしない場合は、この <section> ごと削除してください -->
+<section>
+  <h2>画面イメージ</h2>
+  <div class="shots">
+    <img src="./assets/shot-01-home.png" alt="統合フィード">
+    <img src="./assets/shot-02-map.png" alt="地域マップ">
+    <img src="./assets/shot-03-assistant.png" alt="AIアシスタント">
+    <img src="./assets/shot-04-events.png" alt="イベント一覧">
+    <img src="./assets/shot-05-experts.png" alt="専門家一覧">
+  </div>
+</section>
+
+<section>
+  <h2>掲載している情報の提供元</h2>
+  <p>つづきアンテナのフィードは、以下の情報源から都筑区に関する記事を集めて掲載しています。各記事には提供元の名称を必ず表示し、<strong>見出しと要約のみを掲載</strong>しています。記事の全文は提供元のサイトでお読みいただけます。</p>
+  <ul class="sources">
+    <li><a href="https://www.city.yokohama.lg.jp/tsuzuki/">横浜市 都筑区 新着情報</a>
+      <span>横浜市都筑区（公式）</span></li>
+    <li><a href="https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/tsuzuki/">横浜市 都筑区 記者発表</a>
+      <span>横浜市都筑区（公式）</span></li>
+    <li><a href="https://www.city.yokohama.lg.jp/tsuzuki/bosai_bohan/">横浜市 都筑区 防災・防犯</a>
+      <span>横浜市都筑区（公式）</span></li>
+    <li><a href="https://www.city.yokohama.lg.jp/tsuzuki/kosodate_kyoiku/">横浜市 都筑区 子育て・教育</a>
+      <span>横浜市都筑区（公式）</span></li>
+    <li><a href="https://www.townnews.co.jp/0104/">タウンニュース 都筑区版</a>
+      <span>株式会社タウンニュース社</span></li>
+    <li><a href="https://www.tsudzuki.mutsuki.yokohama/category/tsuzuki/event/">むつづき（都筑区イベント）</a>
+      <span>MUTSUKI（掲載許諾取得済み）</span></li>
+    <li>つづきアンテナ編集部
+      <span>株式会社NEXASPARK が自社で執筆・編集した記事</span></li>
+  </ul>
+  <p class="note">掲載内容についてのご指摘・掲載停止のご依頼は、下記のお問い合わせ窓口までご連絡ください。</p>
+</section>
+
+<section>
+  <h2>更新情報</h2>
+  <ul class="updates">
+    <li><time datetime="2026-08-31">2026-08-31</time><span>本サイトを公開しました。</span></li>
+  </ul>
+  <p class="note">Android 版は現在、公開に向けて準備中です。配信を開始しましたら、この欄でお知らせします。以降もアプリの新しいバージョンを公開するたびに更新します。</p>
+</section>
+
+<section id="contact">
+  <h2>お問い合わせ</h2>
+  <p>つづきアンテナに関するご質問・ご意見、掲載内容についてのご連絡は、以下の窓口で承ります。</p>
+  <div class="contact">
+    <dl>
+      <dt>運営</dt>
+      <dd>株式会社NEXASPARK つづきアンテナ運営担当</dd>
+      <dt>メール</dt>
+      <dd><a href="mailto:yuta.kimura@nexaspark.org">yuta.kimura@nexaspark.org</a></dd>
+      <dt>受付</dt>
+      <dd>平日 10:00–18:00（土日祝を除く／返信までに数営業日いただく場合があります）</dd>
+    </dl>
+  </div>
+  <p style="margin-top:12px"><a href="./contact.html">お問い合わせページを開く →</a></p>
+</section>
+
+<section>
+  <h2>規約・ポリシー</h2>
+  <a class="card" href="./privacy.html"><b>プライバシーポリシー →</b><br>本アプリにおける利用者情報の取扱い</a>
+  <a class="card" href="./terms.html"><b>利用規約 →</b><br>本アプリの利用条件</a>
+</section>
+
 </main>
+
+<footer>
+  株式会社NEXASPARK<br>
+  お問い合わせ: <a href="mailto:yuta.kimura@nexaspark.org">yuta.kimura@nexaspark.org</a>
+</footer>
+
 </body>
 </html>
